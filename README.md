@@ -7,7 +7,7 @@ state = [self.car.view, orientation, -orientation, last_distance - self.distance
 
 car view is 28x28 image crop from car location with car as center.Orientation is angle with the target, last distance - self.distance is the change in the distance from target as compared to previous timestep.
 
-below are the rewards configured
+below is how the rewards are configured
 
         # moving on the sand
         if sand[int(self.car.x), int(self.car.y)] > 0:
