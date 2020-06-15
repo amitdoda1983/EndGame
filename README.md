@@ -5,7 +5,7 @@ This is the state being captured and used
 
 state = [self.car.view, orientation, -orientation, last_distance - self.distance]
 
-car view is 28x28 impage crop from car location with car as center.Orientation is angle with the target, last distance - self.distance is the change in the distance from target as compared to previous timestep.
+car view is 28x28 image crop from car location with car as center.Orientation is angle with the target, last distance - self.distance is the change in the distance from target as compared to previous timestep.
 
 below are the rewards configured
 
