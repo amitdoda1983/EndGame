@@ -23,3 +23,5 @@ below is how the rewards are configured
             if self.distance < last_distance:
                 last_reward = 1
                 
+
+The challenge i see is that the car is not taking the shorter route always, looks like further finetuning with rewards is needed, makng use of living penalty properly.
