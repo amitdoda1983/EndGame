@@ -7,6 +7,8 @@ state = [self.car.view, orientation, -orientation, last_distance - self.distance
 
 car view is 28x28 image crop from car location with car as center.Orientation is angle with the target, last distance - self.distance is the change in the distance from target as compared to previous timestep.
 
+Basic CNNs are used for actor and critic models.
+
 below is how the rewards are configured
 
         # moving on the sand
@@ -24,4 +26,8 @@ below is how the rewards are configured
                 last_reward = 1
                 
 
-The challenge i see is that the car is not taking the shorter route always, looks like further finetuning with rewards is needed, makng use of living penalty properly.
+
+
+This model took around 40000 timesteps to train
+
+The current challenge i see is that the car is not taking the shorter route always, looks like further finetuning with rewards is needed, makng use of living penalty properly.
